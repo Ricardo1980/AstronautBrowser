@@ -1,0 +1,106 @@
+{
+    "id": 12,
+    "url": "https://lldev.thespacedevs.com/2.2.0/astronaut/12/",
+    "name": "Alexander Gerst",
+    "status": {
+        "id": 1,
+        "name": "Active"
+    },
+    "type": {
+        "id": 2,
+        "name": "Government"
+    },
+    "agency": {
+        "id": 27,
+        "url": "https://lldev.thespacedevs.com/2.2.0/agencies/27/",
+        "name": "European Space Agency",
+        "type": "Multinational"
+    },
+    "age": 46,
+    "date_of_birth": "1976-05-03",
+    "date_of_death": null,
+    "nationality": "German",
+    "twitter": "https://twitter.com/Astro_Alex",
+    "instagram": "https://www.instagram.com/astro_alex_esa/",
+    "bio": "Alexander Gerst is a German European Space Agency astronaut and geophysicist, who was selected in 2009 to take part in space training.\r\nHe was part of the International Space Station Expedition 40 and 41 from May to November 2014.\r\nGerst returned to space on June 6, 2018, as part of Expedition 56/57 as the ISS Commander.",
+    "profile_image": "https://spacelaunchnow-prod-east.nyc3.digitaloceanspaces.com/media/astronaut_images/alexander2520gerst_image_20181127211820.jpg",
+    "profile_image_thumbnail": "https://spacelaunchnow-prod-east.nyc3.digitaloceanspaces.com/media/astronaut_images/alexander_gerst_thumbnail_20220911034407.jpeg",
+    "wiki": "https://en.wikipedia.org/wiki/Alexander_Gerst",
+    "flights": [],
+    "landings": [
+        {
+            "id": 169,
+            "url": "https://lldev.thespacedevs.com/2.2.0/spacecraft/flight/169/",
+            "destination": "International Space Station",
+            "mission_end": "2014-11-10T03:58:00Z",
+            "spacecraft": {
+                "id": 58,
+                "url": "https://lldev.thespacedevs.com/2.2.0/spacecraft/58/",
+                "name": "Soyuz TMA-13M",
+                "serial_number": "Soyuz TMA-M 11F732A47 #713",
+                "status": {
+                    "id": 4,
+                    "name": "Single Use"
+                },
+                "description": "Soyuz TMA-13M was a Soyuz spacecraft which launched on 28 May 2014 19:57 UTC. It transported three members of the Expedition 40 crew to the International Space Station. The crew consisted of Maksim Surayev, Gregory R. Wiseman, and Alexander Gerst.",
+                "spacecraft_config": {
+                    "id": 1,
+                    "url": "https://lldev.thespacedevs.com/2.2.0/config/spacecraft/1/",
+                    "name": "Soyuz",
+                    "type": {
+                        "id": 1,
+                        "name": "Unknown"
+                    },
+                    "agency": {
+                        "id": 63,
+                        "url": "https://lldev.thespacedevs.com/2.2.0/agencies/63/",
+                        "name": "Russian Federal Space Agency (ROSCOSMOS)",
+                        "type": "Government"
+                    },
+                    "in_use": true,
+                    "image_url": "https://spacelaunchnow-prod-east.nyc3.digitaloceanspaces.com/media/orbiter_images/soyuz_image_20201015191152.jpg"
+                }
+            },
+            "launch": null
+        },
+        {
+            "id": 35,
+            "url": "https://lldev.thespacedevs.com/2.2.0/spacecraft/flight/35/",
+            "destination": "International Space Station",
+            "mission_end": "2018-12-20T05:02:00Z",
+            "spacecraft": {
+                "id": 42,
+                "url": "https://lldev.thespacedevs.com/2.2.0/spacecraft/42/",
+                "name": "Soyuz MS-09",
+                "serial_number": "Soyuz MS 11F732A48 #739",
+                "status": {
+                    "id": 4,
+                    "name": "Single Use"
+                },
+                "description": "Soyuz MS-09 is a Soyuz spaceflight which launched on June 6, 2018. It transported three members of the Expedition 56 crew to the International Space Station. The crew consists of Sergey Prokopyev,  Alexander Gerst and  Serena M. Auñón-Chancellor to the International Space Station.",
+                "spacecraft_config": {
+                    "id": 1,
+                    "url": "https://lldev.thespacedevs.com/2.2.0/config/spacecraft/1/",
+                    "name": "Soyuz",
+                    "type": {
+                        "id": 1,
+                        "name": "Unknown"
+                    },
+                    "agency": {
+                        "id": 63,
+                        "url": "https://lldev.thespacedevs.com/2.2.0/agencies/63/",
+                        "name": "Russian Federal Space Agency (ROSCOSMOS)",
+                        "type": "Government"
+                    },
+                    "in_use": true,
+                    "image_url": "https://spacelaunchnow-prod-east.nyc3.digitaloceanspaces.com/media/orbiter_images/soyuz_image_20201015191152.jpg"
+                }
+            },
+            "launch": null
+        }
+    ],
+    "flights_count": 2,
+    "landings_count": 2,
+    "last_flight": "2018-06-06T11:12:41Z",
+    "first_flight": "2014-05-28T19:57:41Z"
+}

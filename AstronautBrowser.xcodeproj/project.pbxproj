@@ -1,0 +1,740 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C2B221D297FFB9800A4656F /* AstronautBrowserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B221C297FFB9800A4656F /* AstronautBrowserApp.swift */; };
+		8C2B221F297FFB9800A4656F /* AstronautsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B221E297FFB9800A4656F /* AstronautsListView.swift */; };
+		8C2B2221297FFB9900A4656F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C2B2220297FFB9900A4656F /* Assets.xcassets */; };
+		8C2B2224297FFB9900A4656F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C2B2223297FFB9900A4656F /* Preview Assets.xcassets */; };
+		8C2B2248298014DC00A4656F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B2247298014DC00A4656F /* Constants.swift */; };
+		8C2B224A2980174400A4656F /* AstronautServiceURLFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B22492980174400A4656F /* AstronautServiceURLFactory.swift */; };
+		8C2B224C2980183100A4656F /* AstronautService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B224B2980183100A4656F /* AstronautService.swift */; };
+		8C2B224E2980196700A4656F /* AstronautServiceURLFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B224D2980196700A4656F /* AstronautServiceURLFactoryTests.swift */; };
+		8C2B225029801ABF00A4656F /* AstronautNormal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B224F29801ABF00A4656F /* AstronautNormal.swift */; };
+		8C2B225229801AC700A4656F /* Agency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B225129801AC700A4656F /* Agency.swift */; };
+		8C2B225429801AD100A4656F /* AstronautDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B225329801AD100A4656F /* AstronautDetail.swift */; };
+		8C2B225629801C2000A4656F /* AstronautDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B225529801C2000A4656F /* AstronautDetailView.swift */; };
+		8C2B225A29801FDA00A4656F /* AnyPublisher+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B225929801FDA00A4656F /* AnyPublisher+Extensions.swift */; };
+		8C2B225C298032CB00A4656F /* AstronautsListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B225B298032CB00A4656F /* AstronautsListViewModelTests.swift */; };
+		8C2B225E2980333000A4656F /* AstronautsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B225D2980333000A4656F /* AstronautsListViewModel.swift */; };
+		8C2B22602980337B00A4656F /* AstronautRowItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B225F2980337B00A4656F /* AstronautRowItem.swift */; };
+		8C2B2262298033B700A4656F /* AstronautRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B2261298033B700A4656F /* AstronautRowView.swift */; };
+		8C2B22642980378200A4656F /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B22632980378200A4656F /* DateFormatter+Extensions.swift */; };
+		8C2B226729804FAA00A4656F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B226629804FAA00A4656F /* API.swift */; };
+		8C2B22692980508B00A4656F /* PaginatedAstronautNormalList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B22682980508B00A4656F /* PaginatedAstronautNormalList.swift */; };
+		8C2B226E298056CE00A4656F /* astronaut_detail.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C2B226D298056CE00A4656F /* astronaut_detail.json */; };
+		8C2B22742980605700A4656F /* AstronautDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B22732980605700A4656F /* AstronautDetailViewModel.swift */; };
+		8C2B22792980823100A4656F /* ErrorLoadingDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B22782980823100A4656F /* ErrorLoadingDataView.swift */; };
+		8C2B227B2980824800A4656F /* LoadingDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B227A2980824800A4656F /* LoadingDataView.swift */; };
+		8C2B227D2980826400A4656F /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B227C2980826400A4656F /* AvatarView.swift */; };
+		8C2B227F298083FD00A4656F /* AstronautDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B227E298083FD00A4656F /* AstronautDetailViewModelTests.swift */; };
+		8C2B22812980865C00A4656F /* AstronautServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B22802980865C00A4656F /* AstronautServiceMock.swift */; };
+		8C2B2284298092D300A4656F /* AstronautDetail+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B2283298092D300A4656F /* AstronautDetail+Extensions.swift */; };
+		8C2B22862980930400A4656F /* ResourceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B22852980930400A4656F /* ResourceLoader.swift */; };
+		8C2B228929809F6100A4656F /* PaginatedAstronautNormalListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B228829809F6100A4656F /* PaginatedAstronautNormalListTests.swift */; };
+		8C2B228B29809F7300A4656F /* AstronautDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B228A29809F7300A4656F /* AstronautDetailTests.swift */; };
+		8C6692692981561A00824E7F /* LoadingNextPageRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6692682981561A00824E7F /* LoadingNextPageRowView.swift */; };
+		8C66926B2981562E00824E7F /* NoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C66926A2981562E00824E7F /* NoDataView.swift */; };
+		8C66926D2981564100824E7F /* ErrorLoadingNextPageRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C66926C2981564100824E7F /* ErrorLoadingNextPageRowView.swift */; };
+		8C66926F2981566000824E7F /* FilteringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C66926E2981566000824E7F /* FilteringView.swift */; };
+		8C6692712981599700824E7F /* AstronautDetailItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6692702981599700824E7F /* AstronautDetailItem.swift */; };
+		8C66927329815AEF00824E7F /* PaginatedAstronautNormalList+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C66927229815AEF00824E7F /* PaginatedAstronautNormalList+Extensions.swift */; };
+		8C66927629815CDF00824E7F /* paginated_astronaut_normal_list_second_page.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C66927429815CDF00824E7F /* paginated_astronaut_normal_list_second_page.json */; };
+		8C66927729815CDF00824E7F /* paginated_astronaut_normal_list_first_page.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C66927529815CDF00824E7F /* paginated_astronaut_normal_list_first_page.json */; };
+		8C66927D2981788600824E7F /* SwiftUINavigation in Frameworks */ = {isa = PBXBuildFile; productRef = 8C66927C2981788600824E7F /* SwiftUINavigation */; };
+		8C66927F29818AE700824E7F /* FilterAstronautStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C66927E29818AE700824E7F /* FilterAstronautStatus.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8C2B222A297FFB9900A4656F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C2B2211297FFB9800A4656F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C2B2218297FFB9800A4656F;
+			remoteInfo = AstronautBrowser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8C2B2219297FFB9800A4656F /* AstronautBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstronautBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C2B221C297FFB9800A4656F /* AstronautBrowserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautBrowserApp.swift; sourceTree = "<group>"; };
+		8C2B221E297FFB9800A4656F /* AstronautsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautsListView.swift; sourceTree = "<group>"; };
+		8C2B2220297FFB9900A4656F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C2B2223297FFB9900A4656F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8C2B2229297FFB9900A4656F /* AstronautBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstronautBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C2B2247298014DC00A4656F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8C2B22492980174400A4656F /* AstronautServiceURLFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautServiceURLFactory.swift; sourceTree = "<group>"; };
+		8C2B224B2980183100A4656F /* AstronautService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautService.swift; sourceTree = "<group>"; };
+		8C2B224D2980196700A4656F /* AstronautServiceURLFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautServiceURLFactoryTests.swift; sourceTree = "<group>"; };
+		8C2B224F29801ABF00A4656F /* AstronautNormal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautNormal.swift; sourceTree = "<group>"; };
+		8C2B225129801AC700A4656F /* Agency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agency.swift; sourceTree = "<group>"; };
+		8C2B225329801AD100A4656F /* AstronautDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautDetail.swift; sourceTree = "<group>"; };
+		8C2B225529801C2000A4656F /* AstronautDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautDetailView.swift; sourceTree = "<group>"; };
+		8C2B225929801FDA00A4656F /* AnyPublisher+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyPublisher+Extensions.swift"; sourceTree = "<group>"; };
+		8C2B225B298032CB00A4656F /* AstronautsListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautsListViewModelTests.swift; sourceTree = "<group>"; };
+		8C2B225D2980333000A4656F /* AstronautsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautsListViewModel.swift; sourceTree = "<group>"; };
+		8C2B225F2980337B00A4656F /* AstronautRowItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautRowItem.swift; sourceTree = "<group>"; };
+		8C2B2261298033B700A4656F /* AstronautRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautRowView.swift; sourceTree = "<group>"; };
+		8C2B22632980378200A4656F /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
+		8C2B226629804FAA00A4656F /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		8C2B22682980508B00A4656F /* PaginatedAstronautNormalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginatedAstronautNormalList.swift; sourceTree = "<group>"; };
+		8C2B226D298056CE00A4656F /* astronaut_detail.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = astronaut_detail.json; sourceTree = "<group>"; };
+		8C2B22732980605700A4656F /* AstronautDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautDetailViewModel.swift; sourceTree = "<group>"; };
+		8C2B22782980823100A4656F /* ErrorLoadingDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorLoadingDataView.swift; sourceTree = "<group>"; };
+		8C2B227A2980824800A4656F /* LoadingDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingDataView.swift; sourceTree = "<group>"; };
+		8C2B227C2980826400A4656F /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		8C2B227E298083FD00A4656F /* AstronautDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautDetailViewModelTests.swift; sourceTree = "<group>"; };
+		8C2B22802980865C00A4656F /* AstronautServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautServiceMock.swift; sourceTree = "<group>"; };
+		8C2B2283298092D300A4656F /* AstronautDetail+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstronautDetail+Extensions.swift"; sourceTree = "<group>"; };
+		8C2B22852980930400A4656F /* ResourceLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceLoader.swift; sourceTree = "<group>"; };
+		8C2B228829809F6100A4656F /* PaginatedAstronautNormalListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginatedAstronautNormalListTests.swift; sourceTree = "<group>"; };
+		8C2B228A29809F7300A4656F /* AstronautDetailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautDetailTests.swift; sourceTree = "<group>"; };
+		8C6692682981561A00824E7F /* LoadingNextPageRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingNextPageRowView.swift; sourceTree = "<group>"; };
+		8C66926A2981562E00824E7F /* NoDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDataView.swift; sourceTree = "<group>"; };
+		8C66926C2981564100824E7F /* ErrorLoadingNextPageRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorLoadingNextPageRowView.swift; sourceTree = "<group>"; };
+		8C66926E2981566000824E7F /* FilteringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteringView.swift; sourceTree = "<group>"; };
+		8C6692702981599700824E7F /* AstronautDetailItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautDetailItem.swift; sourceTree = "<group>"; };
+		8C66927229815AEF00824E7F /* PaginatedAstronautNormalList+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PaginatedAstronautNormalList+Extensions.swift"; sourceTree = "<group>"; };
+		8C66927429815CDF00824E7F /* paginated_astronaut_normal_list_second_page.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = paginated_astronaut_normal_list_second_page.json; sourceTree = "<group>"; };
+		8C66927529815CDF00824E7F /* paginated_astronaut_normal_list_first_page.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = paginated_astronaut_normal_list_first_page.json; sourceTree = "<group>"; };
+		8C66927E29818AE700824E7F /* FilterAstronautStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterAstronautStatus.swift; sourceTree = "<group>"; };
+		8C6692802981A9BE00824E7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C2B2216297FFB9800A4656F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C66927D2981788600824E7F /* SwiftUINavigation in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C2B2226297FFB9900A4656F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C2B2210297FFB9800A4656F = {
+			isa = PBXGroup;
+			children = (
+				8C2B221B297FFB9800A4656F /* AstronautBrowser */,
+				8C2B222C297FFB9900A4656F /* AstronautBrowserTests */,
+				8C2B221A297FFB9800A4656F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8C2B221A297FFB9800A4656F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C2B2219297FFB9800A4656F /* AstronautBrowser.app */,
+				8C2B2229297FFB9900A4656F /* AstronautBrowserTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C2B221B297FFB9800A4656F /* AstronautBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				8C6692802981A9BE00824E7F /* Info.plist */,
+				8C2B2222297FFB9900A4656F /* Preview Content */,
+				8C2B2220297FFB9900A4656F /* Assets.xcassets */,
+				8C2B221C297FFB9800A4656F /* AstronautBrowserApp.swift */,
+				8C2B2247298014DC00A4656F /* Constants.swift */,
+				8C2B2275298060C400A4656F /* Views */,
+				8C2B2276298060CF00A4656F /* ViewModels */,
+				8C2B225829801C4B00A4656F /* AstronautService */,
+				8C2B2277298060F600A4656F /* Networking */,
+				8C2B226529803C9C00A4656F /* Extensions */,
+			);
+			path = AstronautBrowser;
+			sourceTree = "<group>";
+		};
+		8C2B2222297FFB9900A4656F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8C2B2223297FFB9900A4656F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8C2B222C297FFB9900A4656F /* AstronautBrowserTests */ = {
+			isa = PBXGroup;
+			children = (
+				8C2B22872980931400A4656F /* Utils */,
+				8C2B2282298087E500A4656F /* Mocks */,
+				8C2B226C2980510B00A4656F /* JSONs */,
+				8C2B225B298032CB00A4656F /* AstronautsListViewModelTests.swift */,
+				8C2B227E298083FD00A4656F /* AstronautDetailViewModelTests.swift */,
+				8C2B224D2980196700A4656F /* AstronautServiceURLFactoryTests.swift */,
+				8C2B228829809F6100A4656F /* PaginatedAstronautNormalListTests.swift */,
+				8C2B228A29809F7300A4656F /* AstronautDetailTests.swift */,
+			);
+			path = AstronautBrowserTests;
+			sourceTree = "<group>";
+		};
+		8C2B225729801C3A00A4656F /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				8C2B224F29801ABF00A4656F /* AstronautNormal.swift */,
+				8C2B225129801AC700A4656F /* Agency.swift */,
+				8C2B225329801AD100A4656F /* AstronautDetail.swift */,
+				8C2B22682980508B00A4656F /* PaginatedAstronautNormalList.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		8C2B225829801C4B00A4656F /* AstronautService */ = {
+			isa = PBXGroup;
+			children = (
+				8C2B225729801C3A00A4656F /* DataModels */,
+				8C2B22492980174400A4656F /* AstronautServiceURLFactory.swift */,
+				8C2B224B2980183100A4656F /* AstronautService.swift */,
+				8C66927E29818AE700824E7F /* FilterAstronautStatus.swift */,
+			);
+			path = AstronautService;
+			sourceTree = "<group>";
+		};
+		8C2B226529803C9C00A4656F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8C2B225929801FDA00A4656F /* AnyPublisher+Extensions.swift */,
+				8C2B22632980378200A4656F /* DateFormatter+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8C2B226C2980510B00A4656F /* JSONs */ = {
+			isa = PBXGroup;
+			children = (
+				8C66927529815CDF00824E7F /* paginated_astronaut_normal_list_first_page.json */,
+				8C66927429815CDF00824E7F /* paginated_astronaut_normal_list_second_page.json */,
+				8C2B226D298056CE00A4656F /* astronaut_detail.json */,
+			);
+			path = JSONs;
+			sourceTree = "<group>";
+		};
+		8C2B2275298060C400A4656F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8C2B228D2980AC4C00A4656F /* AstronautsList */,
+				8C2B228C2980AC3D00A4656F /* AstronautDetail */,
+				8C2B22902980AD6D00A4656F /* Common */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8C2B2276298060CF00A4656F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8C2B225D2980333000A4656F /* AstronautsListViewModel.swift */,
+				8C2B225F2980337B00A4656F /* AstronautRowItem.swift */,
+				8C2B22732980605700A4656F /* AstronautDetailViewModel.swift */,
+				8C6692702981599700824E7F /* AstronautDetailItem.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8C2B2277298060F600A4656F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8C2B226629804FAA00A4656F /* API.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		8C2B2282298087E500A4656F /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				8C2B22802980865C00A4656F /* AstronautServiceMock.swift */,
+				8C2B2283298092D300A4656F /* AstronautDetail+Extensions.swift */,
+				8C66927229815AEF00824E7F /* PaginatedAstronautNormalList+Extensions.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		8C2B22872980931400A4656F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8C2B22852980930400A4656F /* ResourceLoader.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8C2B228C2980AC3D00A4656F /* AstronautDetail */ = {
+			isa = PBXGroup;
+			children = (
+				8C2B225529801C2000A4656F /* AstronautDetailView.swift */,
+			);
+			path = AstronautDetail;
+			sourceTree = "<group>";
+		};
+		8C2B228D2980AC4C00A4656F /* AstronautsList */ = {
+			isa = PBXGroup;
+			children = (
+				8C2B221E297FFB9800A4656F /* AstronautsListView.swift */,
+				8C2B2261298033B700A4656F /* AstronautRowView.swift */,
+				8C66926A2981562E00824E7F /* NoDataView.swift */,
+				8C6692682981561A00824E7F /* LoadingNextPageRowView.swift */,
+				8C66926C2981564100824E7F /* ErrorLoadingNextPageRowView.swift */,
+				8C66926E2981566000824E7F /* FilteringView.swift */,
+			);
+			path = AstronautsList;
+			sourceTree = "<group>";
+		};
+		8C2B22902980AD6D00A4656F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8C2B227C2980826400A4656F /* AvatarView.swift */,
+				8C2B22782980823100A4656F /* ErrorLoadingDataView.swift */,
+				8C2B227A2980824800A4656F /* LoadingDataView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C2B2218297FFB9800A4656F /* AstronautBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C2B223D297FFB9900A4656F /* Build configuration list for PBXNativeTarget "AstronautBrowser" */;
+			buildPhases = (
+				8C2B2215297FFB9800A4656F /* Sources */,
+				8C2B2216297FFB9800A4656F /* Frameworks */,
+				8C2B2217297FFB9800A4656F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AstronautBrowser;
+			packageProductDependencies = (
+				8C66927C2981788600824E7F /* SwiftUINavigation */,
+			);
+			productName = AstronautBrowser;
+			productReference = 8C2B2219297FFB9800A4656F /* AstronautBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8C2B2228297FFB9900A4656F /* AstronautBrowserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C2B2240297FFB9900A4656F /* Build configuration list for PBXNativeTarget "AstronautBrowserTests" */;
+			buildPhases = (
+				8C2B2225297FFB9900A4656F /* Sources */,
+				8C2B2226297FFB9900A4656F /* Frameworks */,
+				8C2B2227297FFB9900A4656F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C2B222B297FFB9900A4656F /* PBXTargetDependency */,
+			);
+			name = AstronautBrowserTests;
+			productName = AstronautBrowserTests;
+			productReference = 8C2B2229297FFB9900A4656F /* AstronautBrowserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C2B2211297FFB9800A4656F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					8C2B2218297FFB9800A4656F = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					8C2B2228297FFB9900A4656F = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 8C2B2218297FFB9800A4656F;
+					};
+				};
+			};
+			buildConfigurationList = 8C2B2214297FFB9800A4656F /* Build configuration list for PBXProject "AstronautBrowser" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C2B2210297FFB9800A4656F;
+			packageReferences = (
+				8C66927B2981788600824E7F /* XCRemoteSwiftPackageReference "swiftui-navigation" */,
+			);
+			productRefGroup = 8C2B221A297FFB9800A4656F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C2B2218297FFB9800A4656F /* AstronautBrowser */,
+				8C2B2228297FFB9900A4656F /* AstronautBrowserTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C2B2217297FFB9800A4656F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C2B2224297FFB9900A4656F /* Preview Assets.xcassets in Resources */,
+				8C2B2221297FFB9900A4656F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C2B2227297FFB9900A4656F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C66927629815CDF00824E7F /* paginated_astronaut_normal_list_second_page.json in Resources */,
+				8C2B226E298056CE00A4656F /* astronaut_detail.json in Resources */,
+				8C66927729815CDF00824E7F /* paginated_astronaut_normal_list_first_page.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C2B2215297FFB9800A4656F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C2B22692980508B00A4656F /* PaginatedAstronautNormalList.swift in Sources */,
+				8C2B22742980605700A4656F /* AstronautDetailViewModel.swift in Sources */,
+				8C2B225029801ABF00A4656F /* AstronautNormal.swift in Sources */,
+				8C2B225629801C2000A4656F /* AstronautDetailView.swift in Sources */,
+				8C2B22642980378200A4656F /* DateFormatter+Extensions.swift in Sources */,
+				8C66926B2981562E00824E7F /* NoDataView.swift in Sources */,
+				8C2B225E2980333000A4656F /* AstronautsListViewModel.swift in Sources */,
+				8C66927F29818AE700824E7F /* FilterAstronautStatus.swift in Sources */,
+				8C2B226729804FAA00A4656F /* API.swift in Sources */,
+				8C2B22792980823100A4656F /* ErrorLoadingDataView.swift in Sources */,
+				8C2B224A2980174400A4656F /* AstronautServiceURLFactory.swift in Sources */,
+				8C2B225229801AC700A4656F /* Agency.swift in Sources */,
+				8C6692712981599700824E7F /* AstronautDetailItem.swift in Sources */,
+				8C66926D2981564100824E7F /* ErrorLoadingNextPageRowView.swift in Sources */,
+				8C2B221F297FFB9800A4656F /* AstronautsListView.swift in Sources */,
+				8C66926F2981566000824E7F /* FilteringView.swift in Sources */,
+				8C2B225A29801FDA00A4656F /* AnyPublisher+Extensions.swift in Sources */,
+				8C2B2262298033B700A4656F /* AstronautRowView.swift in Sources */,
+				8C6692692981561A00824E7F /* LoadingNextPageRowView.swift in Sources */,
+				8C2B225429801AD100A4656F /* AstronautDetail.swift in Sources */,
+				8C2B221D297FFB9800A4656F /* AstronautBrowserApp.swift in Sources */,
+				8C2B224C2980183100A4656F /* AstronautService.swift in Sources */,
+				8C2B2248298014DC00A4656F /* Constants.swift in Sources */,
+				8C2B227B2980824800A4656F /* LoadingDataView.swift in Sources */,
+				8C2B227D2980826400A4656F /* AvatarView.swift in Sources */,
+				8C2B22602980337B00A4656F /* AstronautRowItem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C2B2225297FFB9900A4656F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C2B228929809F6100A4656F /* PaginatedAstronautNormalListTests.swift in Sources */,
+				8C2B2284298092D300A4656F /* AstronautDetail+Extensions.swift in Sources */,
+				8C2B227F298083FD00A4656F /* AstronautDetailViewModelTests.swift in Sources */,
+				8C2B228B29809F7300A4656F /* AstronautDetailTests.swift in Sources */,
+				8C2B224E2980196700A4656F /* AstronautServiceURLFactoryTests.swift in Sources */,
+				8C2B225C298032CB00A4656F /* AstronautsListViewModelTests.swift in Sources */,
+				8C2B22812980865C00A4656F /* AstronautServiceMock.swift in Sources */,
+				8C2B22862980930400A4656F /* ResourceLoader.swift in Sources */,
+				8C66927329815AEF00824E7F /* PaginatedAstronautNormalList+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C2B222B297FFB9900A4656F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C2B2218297FFB9800A4656F /* AstronautBrowser */;
+			targetProxy = 8C2B222A297FFB9900A4656F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8C2B223B297FFB9900A4656F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8C2B223C297FFB9900A4656F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C2B223E297FFB9900A4656F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AstronautBrowser/Preview Content\"";
+				DEVELOPMENT_TEAM = 4466M68F4Z;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AstronautBrowser/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ricardoruizlopez.AstronautBrowser.AstronautBrowser;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8C2B223F297FFB9900A4656F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AstronautBrowser/Preview Content\"";
+				DEVELOPMENT_TEAM = 4466M68F4Z;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AstronautBrowser/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ricardoruizlopez.AstronautBrowser.AstronautBrowser;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		8C2B2241297FFB9900A4656F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4466M68F4Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ricardoruizlopez.AstronautBrowser.AstronautBrowserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AstronautBrowser.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AstronautBrowser";
+			};
+			name = Debug;
+		};
+		8C2B2242297FFB9900A4656F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4466M68F4Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ricardoruizlopez.AstronautBrowser.AstronautBrowserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AstronautBrowser.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AstronautBrowser";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C2B2214297FFB9800A4656F /* Build configuration list for PBXProject "AstronautBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C2B223B297FFB9900A4656F /* Debug */,
+				8C2B223C297FFB9900A4656F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C2B223D297FFB9900A4656F /* Build configuration list for PBXNativeTarget "AstronautBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C2B223E297FFB9900A4656F /* Debug */,
+				8C2B223F297FFB9900A4656F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C2B2240297FFB9900A4656F /* Build configuration list for PBXNativeTarget "AstronautBrowserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C2B2241297FFB9900A4656F /* Debug */,
+				8C2B2242297FFB9900A4656F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8C66927B2981788600824E7F /* XCRemoteSwiftPackageReference "swiftui-navigation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swiftui-navigation";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8C66927C2981788600824E7F /* SwiftUINavigation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C66927B2981788600824E7F /* XCRemoteSwiftPackageReference "swiftui-navigation" */;
+			productName = SwiftUINavigation;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8C2B2211297FFB9800A4656F /* Project object */;
+}

@@ -1,0 +1,14 @@
+{
+  "images" : [
+    {
+      "filename" : "Ricardo_astronaut_portrait_cartoon_app_icon_cd186355-bee4-464b-9c72-529de087e5d7.png",
+      "idiom" : "universal",
+      "platform" : "ios",
+      "size" : "1024x1024"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
