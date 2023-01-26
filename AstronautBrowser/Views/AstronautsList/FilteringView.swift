@@ -17,13 +17,13 @@ struct FilteringView: View {
 
             List(FilterAstronautStatus.allCases) { filterAstronautStatusCase in
                 Toggle(filterAstronautStatusCase.description, isOn: Binding<Bool>(get: {
-                    // Return if the filter is inside the array of not.
+                    // Returns if the filter is inside the array or not.
                     // If it is inside the collection, we consider that the filter is active
                     filters?.contains(filterAstronautStatusCase) ?? false
 
                 }, set: { value, _ in
                     // If value is false, then we have to remove this filter from the collection
-                    // If true, then we have to add it (if he collection is empty, we have to create it)
+                    // If true, then we have to add it (if the collection is empty, we have to create it)
                     filters = filters?.filter { $0 != filterAstronautStatusCase }
                     if value {
                         if let filters = filters {

@@ -47,7 +47,7 @@ final class AstronautsListViewModel: ObservableObject {
     }
 
     func fetchNextPage() {
-        // To calculate the next offset, just check how many elements are we presenting right now.
+        // To calculate the next offset, just check how many elements we are presenting right now.
         // If we are not presenting elements, then we should not fetch the next page.
         let offset: Int
         switch state {
@@ -58,7 +58,7 @@ final class AstronautsListViewModel: ObservableObject {
         }
 
         // If offset is equal (or greater) than the total number of elements in the server (with or without filter),
-        // there is no point sending this request
+        // then there is no point sending this request
         guard offset < totalRemoteNumberOfAstronauts else {
             return
         }

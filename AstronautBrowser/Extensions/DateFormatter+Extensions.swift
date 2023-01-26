@@ -8,7 +8,7 @@
 import Foundation
 
 // To manage the DOB received from the server, which uses a specific format (year, month, day).
-// Given that there are other formats in the web service, it is better to that like this rather than at the JSONDecoder level.
+// Given that there are other formats in the web service, it is better to that in this way rather than at the JSONDecoder level.
 extension DateFormatter {
 
     private static var dobFormatter: DateFormatter = {

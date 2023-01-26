@@ -113,7 +113,7 @@ struct AstronautsListView: View {
         }
     }
 
-    // General purpose items that, apart from astronaut items, can also contain the
+    // General purpose items that, apart from astronaut items, also contain the
     // "loading next page cell" or "error loading next page cell" at the bottom.
     private var rowItems: [RowItem] {
         switch viewModel.state {

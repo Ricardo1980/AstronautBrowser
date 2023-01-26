@@ -51,7 +51,7 @@ final class API: APIProtocol {
                 } else if let decodingError = $0 as? DecodingError {
                     return APIError.decodingError(description: (decodingError as NSError).localizedDescription)
                 }
-                // More errors can be managed here like cancelled request or no internet connection
+                // More errors can be managed here like cancelled request or no Internet connection
                 return APIError.genericError(description: $0.localizedDescription)
             }
             .receive(on: queue)
