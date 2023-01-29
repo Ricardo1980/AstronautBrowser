@@ -1,5 +1,11 @@
 Several notes about this app:
 
+Web services documentation:
+https://lldev.thespacedevs.com/2.2.0/swagger/
+
+Requirements:
+https://github.com/GlintPay/tech-interviews/blob/main/ios/astronaut-browser.md
+
 I used Xcode 14.2 and iOS 16.2.
 
 The app has not been localized, that's out of scope. However, the date of birth of every astronaut was localized properly according to the current device's locale. That's because some regions have month and day reversed and it can be confusing if this is not properly localized.
